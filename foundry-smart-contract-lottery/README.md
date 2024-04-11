@@ -1,19 +1,66 @@
-# Proveably Random Raffle Contracts
+## Foundry
 
-## About This Code
+**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
 
-## What This Code Will Do
-1. Users can enter the raffle by purchasing a ticket in ETH
-    1. Collected ticket fees will be paid to each draw's winner during the draw
-2. After x time passes, the lottery will automatically draw the next winner
-    1. The drawing will be done programmatically
-3. Chainlink VRF and Chainlink Automation will perform the drawing and timekeeping functions
-    1. VRF -> Randomness
-    2. Automation -> Time-based trigger
+Foundry consists of:
 
-## Tests
-1. Deploy scripts
-2. Tests 
-    1. Work on local chain
-    2. Forked testnet
-    3. Forked mainnet
+-   **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
+-   **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
+-   **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
+-   **Chisel**: Fast, utilitarian, and verbose solidity REPL.
+
+## Documentation
+
+https://book.getfoundry.sh/
+
+## Usage
+
+### Build
+
+```shell
+$ forge build
+```
+
+### Test
+
+```shell
+$ forge test
+```
+
+### Format
+
+```shell
+$ forge fmt
+```
+
+### Gas Snapshots
+
+```shell
+$ forge snapshot
+```
+
+### Anvil
+
+```shell
+$ anvil
+```
+
+### Deploy
+
+```shell
+$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
+```
+
+### Cast
+
+```shell
+$ cast <subcommand>
+```
+
+### Help
+
+```shell
+$ forge --help
+$ anvil --help
+$ cast --help
+```
